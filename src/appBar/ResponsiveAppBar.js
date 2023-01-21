@@ -36,7 +36,7 @@ function ResponsiveAppBar() {
       navigate('/products')
     }
     else if(showPage === 'RECIPE'){
-      navigate('/recipe')
+      navigate('/recipe',{state:{breakfast:true,lunch:false,dinner:false}})
     }
     else if(showPage === 'BLOG'){
       navigate('/blogs')

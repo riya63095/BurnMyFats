@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import './Recipe.css';
 import {content,contentLunch,contentDinner} from '../productData/RecipeData';
-
+import { useLocation } from 'react-router-dom';
 
 const Recipe = () =>{
     
+    const location = useLocation();
     const [search,setSearch] = useState('');
-    const [breakfastFlag,setBreakfastFlag] = useState(true);
-    const [lunchFlag,setLunchFlag] = useState(false);
-    const [dinnerFlag,setDinnerFlag] = useState(false);
+    const [breakfastFlag,setBreakfastFlag] = useState(location.state.breakfast);
+    const [lunchFlag,setLunchFlag] = useState(location.state.lunch);
+    const [dinnerFlag,setDinnerFlag] = useState(location.state.dinner);
     // const [searchVal,setSearchVal] = useState('');
 
     const handleSearch = (e) => {
@@ -50,7 +51,7 @@ const Recipe = () =>{
             {
                 breakfastFlag &&
             <>
-                <div class= 'recipe-parent'>
+                <div id='breakfast' class= 'recipe-parent'>
                     <h2 >Best Breakfast Recipes to Help Lose Abdominal Fat</h2>
                     <h5 style={{color:'red'}}>These  creative  breakfast  ideas can help make your mornings more healthier and exciting...</h5>
                     <img style={{width:'100%'}} src='http://template-kits.cmsmasters.net/demo-food-and-nutrition/wp-content/uploads/sites/4/2020/03/blog-post-8.png'></img>
@@ -60,7 +61,7 @@ const Recipe = () =>{
                     Here's a roundup of some of the best breakfast recipes to help you lose abdominal fat. And for more healthy recipes, 
                     check out Best Dinner Recipes for Abdominal Fat Loss.</p>
                     <p >I find that the most enjoyable way to eat well during short winter days is to focus on loading up on vegetables, rather
-                    than denying myself the cheesy, carb-heavy meals that I’m craving. Here are 29 delicious dinners that are lightened up with fresh and nutritious ingredients. Sneaky!
+                    than denying myself the cheesy, carb-heavy meals that I’m craving. Sneaky!
                     Want to add a side salad to any of the following? For the meals with an Asian spin, try my carrot-ginger dressing. For the
                     others, try my green goddess dressing, creamy sunshine (honey mustard) dressing or perhaps a simple vinaigrette. I find that
                     the most enjoyable way to eat well during short winter days is to focus on loading up on vegetables, rather than denying myself the cheesy,
@@ -115,7 +116,7 @@ const Recipe = () =>{
             {
             lunchFlag &&
             <>
-                <div class= 'recipe-parent'>
+                <div id='lunch' class= 'recipe-parent'>
                     <h2 >Healthy Lunch Recipes That Take 10 Minutes to Help Lose belly Fat</h2>
                     <h5 style={{color:'red'}}>These  creative  lunch  ideas can help boosting your immune system...</h5>
                     <img style={{width:'100%'}} src='https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/health/wp-content/uploads/2022/08/workday_lunch_ideas.jpeg.jpg'></img>
@@ -179,7 +180,7 @@ const Recipe = () =>{
             {
             dinnerFlag &&
             <>
-                <div class= 'recipe-parent'>
+                <div id='dinner' class= 'recipe-parent'>
                     <h2 >Healthy Dinner Recipes That Take 30 Minutes to Help Lose belly Fat</h2>
                     <h5 style={{color:'red'}}>These  creative  dinner  ideas can help make your night more healthier ...</h5>
                     <img style={{width:'100%'}} src='https://i.ytimg.com/vi/CH0BamRC91k/maxresdefault.jpg'></img>
@@ -241,10 +242,5 @@ const Recipe = () =>{
         </>
         );
 }
-
-
-
-
-
 
 export default Recipe;

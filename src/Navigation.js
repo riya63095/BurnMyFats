@@ -22,7 +22,7 @@ import ProductDetails from './productDetails/ProductDetails';
                 <Route path='/login' element={<Login/>}/>
                 <Route path='/home' element={<Home/>}/>
                 <Route path='/products' element={<Products/>}/>
-                <Route path='/recipe' element={<Recipe/>}/>
+                <Route path='/recipe' element={<Recipe />}/>
                 <Route path='/blogs' element={<Blogs/>}/>
                 {/* <Route path='/appbar' element={<ResponsiveAppBar/>}/> */}
                 <Route path='/main' element={<Main/>}/>
