@@ -12,7 +12,7 @@ return(
             {productData.map((pdata,index)=> (                
                 <div key={index}>
                 {item===pdata.alt &&
-                <div>
+                <div class='product-description'>
                     <a href={pdata.img}>
                         <img class="styleImg" src={pdata.img} alt={pdata.alt} />
                     </a>

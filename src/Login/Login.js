@@ -17,7 +17,7 @@ const Login =() =>{
                 if(element.password === password)
                 {
                     sessionStorage.setItem('user',element.name)
-                    Navigate('/main')
+                    Navigate('/homepage')
                 }
                 else{
                     alert("wrong password")

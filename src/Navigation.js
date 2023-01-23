@@ -9,6 +9,7 @@ import Main from './materialUI/Main';
 import Recipe from './materialUI/Recipe';
 import Blogs from './materialUI/Blogs'
 import ProductDetails from './productDetails/ProductDetails';
+import HomePage from './homePage/HomePage';
 
  const Navigation=()=>
 {
@@ -24,9 +25,9 @@ import ProductDetails from './productDetails/ProductDetails';
                 <Route path='/products' element={<Products/>}/>
                 <Route path='/recipe' element={<Recipe />}/>
                 <Route path='/blogs' element={<Blogs/>}/>
-                {/* <Route path='/appbar' element={<ResponsiveAppBar/>}/> */}
+                <Route path='/appbar' element={<ResponsiveAppBar/>}/>
+                <Route path='/homepage' element={<HomePage/>}/>
                 <Route path='/main' element={<Main/>}/>
-
                 <Route path="/" element={<Main/>} />
                 
             </Routes>

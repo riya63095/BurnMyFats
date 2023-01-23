@@ -222,26 +222,75 @@ const productData = [{
 {
     
     'name':`Kellogg's Muesli-Fruit & Nut, 160g`,
-    'img' : 'https://thumbs.dreamstime.com/z/variety-berries-fruits-sale-grocery-store-fresh-organic-strawberries-raspberries-blackberries-grapes-all-126504979.jpg',
+    'img' : 'https://cdn.shopify.com/s/files/1/0039/5886/5987/products/Fruit-and-Nut-04_aa125438-cb9d-40d0-babc-a9197450a220.jpg?v=1656322586',
     'content' : {
-        'Calories': '43',
-        'Vitamin C' : '35% DV',
-        'Manganese' : '32% DV',
-        'Vitamin K1' : '25% DV',
-        'Copper' : '8% DV',
-        'Folate' : '6% DV'
+        'Calories': '289',
+        'Vitamin E' : '31% DV',
+        'Thiamin' : '52% DV',
+        'Vitamin B12' : '52% DV',
+        'Copper' : '17% DV',
+        'Protein' : '52% DV'
 
     },
-    'description' : `Berries are low in calories and extremely nutritious. In addition to being high in antioxidants, they also contain several vitamins and minerals.
-     Berries, especially strawberries, are high in vitamin C.
-     In fact, 1 cup (150 grams) of strawberries provides a whopping 150% of the RDI for vitamin C.`,
+    'description' : `Originating in Switzerland, muesli is a fiber-and-protein power combination of rolled oats, dried fruits, and nuts. 
+    Though 1 cup pushes 300 calories, the payoff in vitamins and minerals across the board makes it a hearty meal.A mixture of nuts and dry fruits makes muesli rich in
+     minerals like calcium, magnesium, phosphorus, and selenium.Muesli contains oat bran, which includes an oat fiber called beta-glucan.`,
 
-    'about' : `Berries are power-packed super-fruits that you can include in your muscle-building foods. 
-    They contain a huge number of antioxidants, which help in gaining muscle mass.It is filled with the goodness you need to keep your body healthy and happy.`,
+    'about' : `A mixture of nuts and dry fruits makes muesli rich in minerals like calcium, magnesium, phosphorus, and selenium.Muesli contains oat bran, which includes an oat fiber called beta-glucan.`,
 
     'alt': 'Muesli'
 
 },
+{
+    
+    'name':`Dry Fruits and Nuts-100gm`,
+    'img' : 'https://m.media-amazon.com/images/I/91BC5rXoYkL._SX679_.jpg',
+    'content' : {
+        'Calories': '744',
+        'Vitamin E' : '35% DV',
+        'Fiber' : '37% DV',
+        'Magnesium' : '20% DV',
+        'Calcium' : '8% DV',
+        'Protein' : '52% DV'
+
+    },
+    'description' : `Dry fruits are rich in potassium, magnesium, calcium, zinc, phosphorus and various vitamins like vitamin A, D, B6, K1 and E. These 
+    nutrients are essential for a healthy immune system. According to a study, dry fruits with high levels of polyphenols help improve immunity by showing anti-inflammatory effects. 
+    It is due to the antioxidant properties of several dry fruits. It also helps eliminate free  radicals  and relieve oxidative stress.Dry fruits are rich in carbohydrates and
+    dietary fibre. As a result, they are one of the best snacking options. The dietary fibre keeps you satiated for long and controls the urge to eat 
+    between meals. As a result, your calorie consumption reduces . At the same time, dietary fiber is good  for a healthy gut and improves bowel movements.`,
+
+    'about' : `Dry fruits are rich in potassium, magnesium, calcium, zinc, phosphorus and various vitamins like vitamin A, D, B6, K1 and E.
+    These nutrients are essential for a healthy immune system.`,
+
+    'alt': 'Dry Fruits and Nuts'
+
+},
+{
+    
+    'name':`Salmon Fish - 300g`,
+    'img' : 'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/12/4/0/HE_smoked-salmon-istock_s4x3.jpg.rend.hgtvcom.616.462.suffix/1449264491029.jpeg',
+    'content' : {
+        'Calories': '182',
+        'Vitamin B12' : '117% DV',
+        'Selenium' : '85% DV',
+        'Vitamin B6' : '56% DV',
+        'Phosphorus' : '21% DV',
+        'Protein' : '96% DV'
+
+    },
+    'description' : `The nutritional value of salmon can vary slightly among the varieties. For example, farmed salmon contains slightly
+     more healthy fats and calories, whereas wild-caught salmon is a bit higher in protein.However, both types are great
+    sources of many key nutrients, including selenium, phosphorus, and B vitamins.Salmon is particularly high in selenium, an important
+     nutrient that is involved in DNA synthesis, thyroid hormone metabolism, and reproductive health.Any types of fish could qualify as fitness foods, but salmon certainly tops the list — it’s sustainable, low in mercury, easy to prepare, and packed with nutrients to promote healthy muscles.
+     Salmon is also one of the best sources of Omega-3 fats you can find.`,
+
+    'about' : `Any types of fish could qualify as fitness foods, but salmon certainly tops the list — it’s sustainable, low in mercury, easy to prepare, and packed with nutrients to promote healthy muscles.
+    Salmon is also one of the best sources of Omega-3 fats you can find.`,
+
+    'alt': 'Salmon Fish'
+
+}
 ]
 
 export default productData;

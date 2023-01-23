@@ -18,17 +18,17 @@
 
 .def{
     float: right;
-    margin: 10% 12% 0% 0%;
+    margin: 4% 12% 2% 0%;
     font-family: 'Times New Roman', Times, serif;
     overflow-wrap: break-word;
 }
-h4{
+.def h4{
     color: rgb(21, 110, 173);
     padding-top: 4%;
     padding-bottom: 0%;
     margin-bottom: 0%;
 }
-p{
+.def p{
     font-size: 15px;
     word-break: break-all;
     width: 42em;

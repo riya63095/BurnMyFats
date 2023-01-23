@@ -70,7 +70,7 @@ function ResponsiveAppBar() {
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 900,
-              letterSpacing: '.1rem',
+              letterSpacing: '.2rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
@@ -127,18 +127,19 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 900,
               letterSpacing: '.3rem',
-              color: 'black',
+              color: 'white',
               textDecoration: 'none',
+              fontSize: '1rem'
             }}
           >
-            LOGO
+            BurnMyFats
           </Typography>
           <Box sx={{ flexGrow: 6, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 5, color: 'white', display: 'block' }}
+                sx={{ my: 3, color: 'white', display: 'block' }}
               >
                 {page}
               </Button>

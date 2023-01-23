@@ -9,6 +9,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import Recipe from '../materialUI/Recipe';
 import './HomePage.css';
+import ResponsiveAppBar from '../appBar/ResponsiveAppBar';
 
 const HomePage = () =>{
 
@@ -39,6 +40,7 @@ const HomePage = () =>{
    
         return(
             <>
+            <ResponsiveAppBar />
             {/* {
                 breakfastFlag || lunchFlag || dinnerFlag ? 
                 <Recipe breakfast = {breakfastFlag} lunch = {lunchFlag} dinner = {dinnerFlag} /> :
